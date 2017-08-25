@@ -17,6 +17,10 @@ public class UserDetailActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_detail);
 
+        if (getActionBar() != null){
+            getActionBar().setDisplayHomeAsUpEnabled(true);
+        }
+
         tvName = findViewById(R.id.tv_name);
         tvCity = findViewById(R.id.tv_city);
         tvHouse = findViewById(R.id.tv_house);
